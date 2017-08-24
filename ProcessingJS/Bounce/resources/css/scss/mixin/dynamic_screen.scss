@@ -1,0 +1,83 @@
+@mixin float-left {
+    float: left;
+}
+
+@mixin text-center {
+    text-align: center;
+}
+
+@mixin title-font-size ($size) {
+    font-size: $size;
+}
+
+@mixin col-1 {
+    width: 8.33%;
+}
+@mixin col-2 {
+    width: 16.66%;
+}
+@mixin col-3 {
+    width: 25%;
+}
+@mixin col-4 {
+    width: 33.33%;
+}
+@mixin col-5 {
+    width: 41.66%;
+}
+@mixin col-6 {
+    width: 50%;
+}
+@mixin col-7 {
+    width: 58.33%;
+}
+@mixin col-8 {
+    width: 66.66%;
+}
+@mixin col-9 {
+    width: 75%;
+}
+@mixin col-10 {
+    width: 83.33%;
+}
+@mixin col-11 {
+    width: 91.66%;
+}
+@mixin col-12 {
+    width: 100%;
+}
+
+// Extra small devices (portrait phones, less than 544px)
+@mixin media-xs () {
+    @media (max-width: 543px) { 
+        @content;
+    }
+}
+
+// Small devices (landscape phones, 544px and up)
+@mixin media-sm () {
+    @media (min-width: 544px) and (max-width: 767px) { 
+        @content;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin media-md () {
+    @media (min-width: 768px) and (max-width: 991px) { 
+        @content;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin media-lg () {
+    @media (min-width: 992px) and (max-width: 1199px) { 
+        @content;
+     }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@mixin media-xl () {
+    @media (min-width: 1200px) { 
+        @content;
+    }
+}
